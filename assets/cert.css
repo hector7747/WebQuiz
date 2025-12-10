@@ -1,0 +1,128 @@
+/* ====== GENERAL STYLES ====== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0a0a0f;
+    color: #e0e0ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ====== HEADER / NAV ====== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #090912;
+    border-bottom: 1px solid rgba(138, 43, 226, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e0d9ff;
+    text-shadow: 0 0 10px #b94cff;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #c3baff;
+    font-weight: 500;
+}
+
+nav a.active,
+nav a:hover {
+    color: #d96bff;
+    text-shadow: 0 0 8px #b94cff;
+}
+
+/* ====== PAGE TITLE ====== */
+.page-title {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-title h2 {
+    font-size: 36px;
+    text-shadow: 0 0 12px #b94cff;
+}
+
+.page-title p {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+/* ====== CERTIFICATE GRID ====== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cert-card {
+    background: #11111a;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(150, 60, 255, 0.3);
+    transition: 0.3s;
+    box-shadow: 0 0 8px rgba(150, 60, 255, 0.3);
+}
+
+.cert-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 16px rgba(200, 90, 255, 0.6);
+}
+
+.pdf-icon {
+    font-size: 50px;
+    color: #d26bff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 12px #b94cff;
+}
+
+/* Certificate Title */
+.cert-card p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #e6ddff;
+}
+
+/* ====== BUTTON ====== */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #a84eff;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn:hover {
+    background: #c06fff;
+    box-shadow: 0 0 12px #c06fff;
+}
+
+/* ====== MOBILE ====== */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px;
+        display: inline-block;
+    }
+}
